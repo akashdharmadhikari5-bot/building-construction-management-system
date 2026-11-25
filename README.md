@@ -287,6 +287,30 @@ for /r %f in (*.php) do C:\xampp\php\php.exe -l "%f"
 ```
 
 ---
+## 📸 Application Screenshots
+
+### 1. Authentication & Role-Based Portals
+| Client Registration | Worker Registration | Login Screen |
+| :---: | :---: | :---: |
+| ![Client Registration](docs/screenshots/01_register_client.png) | ![Worker Registration](docs/screenshots/04_register_worker.png) | ![Login Screen](docs/screenshots/05_login_worker.png) |
+
+| Client Portal Dashboard | Worker Portal Dashboard |
+| :---: | :---: |
+| ![Client Dashboard](docs/screenshots/11_client_dashboard_active.png) | ![Worker Dashboard](docs/screenshots/06_worker_dashboard.png) |
+
+### 2. Admin Centralized Dashboard & Alerts
+![Admin Dashboard Overview](docs/screenshots/08_admin_dashboard_overview.png)
+![Low Stock Alerts](docs/screenshots/09_admin_dashboard_alerts.png)
+
+### 3. Workforce, Attendance & Automated Wages
+![Worker Assignments](docs/screenshots/12_worker_assignments.png)
+![Daily Attendance Sheet](docs/screenshots/16_attendance_sheet.png)
+![Worker Wage Calculations](docs/screenshots/17_worker_wage_calculations.png)
+
+### 4. Inventory, Budgets & Management Reports
+![Material Purchases](docs/screenshots/14_material_purchases.png)
+![Budget & Financial Monitoring](docs/screenshots/19_budget_monitoring.png)
+![Management Reports](docs/screenshots/20_reports_project_financials.png)
 
 ## 📧 Support
 For MCA Academic Project — Building Construction Management System.
