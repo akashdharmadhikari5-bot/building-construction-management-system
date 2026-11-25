@@ -1,0 +1,26 @@
+# BCMS Root .htaccess
+# Protect private directories and sensitive files
+
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Prevent direct access to sensitive and private directories
+    RewriteRule ^(app|config|database|storage|tests|docs)/ - [F,L]
+
+    # Block access to dotfiles (.env, .git, etc.) and sensitive file extensions
+    RewriteRule ^\..* - [F,L]
+    RewriteRule \.(env|example|sql|md|log|json|lock)$ - [F,L]
+</IfModule>
+
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(env|example|sql|md|log|json|lock)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

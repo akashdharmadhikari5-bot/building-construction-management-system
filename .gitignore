@@ -1,0 +1,31 @@
+# Git ignore for BCMS
+
+# Environment file
+.env
+
+# Storage
+storage/logs/*.log
+storage/uploads/*
+!storage/logs/.gitkeep
+!storage/uploads/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PHP composer (if added later)
+vendor/
+composer.lock
+
+# Reference documents
+docs/reference/*.pdf
+
+# IDE
+.idea/
+*.suo
+*.user
